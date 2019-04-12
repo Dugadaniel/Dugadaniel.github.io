@@ -1,0 +1,493 @@
+*{
+         box-sizing:border-box;
+         font-family: sans-serif;
+         list-style: none;
+         text-decoration: none;
+         font-size: 16px;
+                  
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+/*siderbar*/
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color:#cc5200;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  top: 0;
+  z-index: 1;
+  left: 0;
+}
+
+.sidebar a {
+  display: block;
+  text-transform: uppercase;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+
+}
+ 
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.navlink a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.main {
+  margin-left: 185px;
+  padding: 1px 16px;
+  height: 1000px;
+  width: 100%;
+}
+
+img{
+         width: 100%;
+}
+
+
+/*FOOTER*/
+.footer{
+         background: #000;
+         margin-top: 40px;
+         padding: 20px;
+         
+}
+
+.footer-wrapper {
+     
+        margin: 0 auto;
+         width: 80%;
+}
+.footer-wrapper P{
+     
+         color: #ffffff;
+         padding: 20px;
+         margin: 0;
+}
+.footer-wrapper a{
+         text-align: center;
+         color: #ffffff;
+          background: blue;
+         
+         
+}
+
+/*HUMBERGER*/
+
+.navlink{
+        display: none;
+}
+
+.navlink a{
+       color: #ffffff;
+}
+.main-open a {
+     color: #ffffff;
+}
+
+/* Logo*/
+.logo{
+         display: none;
+}
+.logo a{
+     color: #ffffff;    
+}
+
+/* SPEAKERS STYLE*/
+.speakers-heading{
+         text-transform: uppercase;
+}
+
+
+
+/* CONTACT STYLE*/
+.contact-wrapper h1{
+         text-transform: uppercase;
+}
+
+.contact-wrapper ul{
+         padding: 10px;
+         margin:0; 
+}
+.contact-wrapper li{
+         padding: 10px;
+         margin:0; 
+}
+
+/* ORGANIZING TEAM SECTION*/
+
+.team-list{
+         display: flex;
+         align-items: center;
+        justify-content: space-around;
+         flex-flow: row wrap;
+         /*flex-grow: 20px;*/
+        
+}
+.team-list img{
+          border-radius: 300px;
+          width: 100%;
+                 
+         
+}
+ .Team {
+         flex-basis:200px;
+        
+  
+}
+.Team h1,.Team li{
+         text-align: center;
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.main {margin-left: 0;}
+         
+
+}
+
+
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+ 
+  .main-open {
+         display: block;
+} 
+         
+}
+
+@media screen and (min-width: 400px) {
+ .location{
+    display: flex;
+         align-items: center;
+        justify-content: space-between;
+         flex-flow: row wrap;
+         
+}      
+.about-location,.texas-img,.venue,.venue-img{
+         flex-basis: 400px;  
+        
+         }
+         
+   
+         
+}
+
+@media screen and (min-width: 460px) {
+ .location{
+    display: flex;
+         align-items: center;
+        justify-content: space-between;
+         flex-flow: row wrap;
+         
+}      
+.about-location,.texas-img,.venue,.venue-img{
+         flex-basis: 39%;  
+        
+         }
+         
+
+   
+         
+}
+
+@media screen and (min-width: 700px) {
+         *{
+                  font-size: 20px;
+         }
+         
+         .banner{
+           margin-left: 200px;
+         }
+
+.content-wrapper{
+         margin-left: 6px;
+         width: 75%;
+         
+         
+}
+.speakers-list .spk {
+         flex-basis:80px;
+         
+        
+  
+}
+.speakers-section{
+         margin-top: 40px;
+         border-top: 2px solid #000;
+         }
+         
+.contact{
+         margin-top: 40px;
+         border-top: 2px solid #000;
+         
+         }
+         
+.orgTeam-section{
+           margin-top: 40px;
+         border-top: 2px solid #000;       
+         }
+         
+.main-open{
+                  display: none;
+         }
+         
+.navlink{
+        display: block;
+}
+.logo{
+                  display: block;
+         }     
+.logo-wrapper {
+        
+         
+         text-align: center; 
+        
+         
+}
+
+.logo-wrapper p{
+      border: 3px solid #fff;
+      width: 70%;
+      margin-left: 10px;
+         padding: 10px;
+         text-transform: uppercase;
+         color: white;
+         line-height: 30px;
+          background: #000;
+         }  
+         
+         
+.footer{
+     margin: 0 auto;
+width: 80%;
+        
+}
+         
+.navlink a{
+         font-size: 16px; 
+         color: #ffffff;
+                  
+         }
+
+}
+   
+
+/* SPEAKER STYLE*/
+
+.speakers-list,.team-list{
+         display: flex;
+         align-items: center;
+        justify-content: space-around;
+         flex-flow: row wrap;
+         /*flex-grow: 20px;*/
+        
+}
+
+
+.speakers-list img{
+          border-radius: 300px;
+          width: 100%;
+                 
+         
+}
+
+
+
+.speakers-list .spk {
+         flex-basis:200px;
+        
+  
+}
+
+
+
+
+
+
+
+
+
+/*
+.spk ul:hover{
+         border: 2px solid red;
+         border-radius: 40px;
+         background-color: saddlebrown;
+}
+
+.spk h1{
+         
+      font-size: 26px;
+
+}
+.ngbapai h1{
+         
+         margin-bottom: 0;
+}
+.roger-roger h1{
+         
+         margin-bottom: 0;
+}
+
+.mongalla h1{
+         
+         margin-bottom: 0;
+}
+.spk ul li{
+         margin: 4px;
+}
+
+/* Contact 
+
+.contact-wrapper{
+         
+         margin: 0 auto; 
+         width: 100%;
+}
+
+.contact-wrapper li{
+         
+         margin: 10px;
+}
+
+.contact-wrapper ul{
+         
+         margin:0;
+}
+*/
+
+/* footer */
+/*
+.footer{
+         background: black;
+         color: white;
+        height: 26vh;
+        margin: 0 auto;
+         text-align: center;
+
+}
+
+.footer-wrapper{
+         margin: 0 auto; 
+         width: 80%; 
+         line-height: 20px;
+         margin-top: 40px;
+}
+
+
+*/
+
+
+/*
+
+@media only screen and (max-width:685px){
+         
+    .banner{
+         margin-top: 60px;
+}     
+         
+      
+}
+
+@media only screen and (min-width:686px){
+       
+*{
+                  font-size: 20px;
+         }
+         
+.main-open{
+ 
+       display: none;
+}
+         
+.navlink{
+         display: flex;
+         flex-flow: row wrap;
+         justify-content: space-around;
+        
+                  
+         }
+         
+.navlink li a{
+         font-size: 16px;
+                  
+         }
+       
+.banner-words h1{
+ padding: 40px;
+         font-size: 50px;
+}
+.banner-words p{
+         font-size: 60px;
+}
+      
+      
+}
+
+
+@media only screen and (min-width:700px){
+       
+.banner{
+height: 600px;
+}
+
+         
+      
+}
+
+@media only screen and (min-width:846px){
+       
+         .contact-wrapper{
+         
+         margin: 0 auto; 
+         width: 80%;
+}
+
+         
+      
+}
+
+@media only screen and (min-width:646px){
+       
+         .footer{
+         
+         margin: 0 auto; 
+         width: 80%;
+}
+         
+
+     
+}
+
+
+
+
+
+/* BANNER MEDIA QUERIES*/
+
+
+
+
